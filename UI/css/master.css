@@ -13,6 +13,9 @@ html {
     max-height: 100%;
 }
 
+div#middle-body-main {
+    max-height: 70vh;
+}
 
 .header{
     display: flex;
