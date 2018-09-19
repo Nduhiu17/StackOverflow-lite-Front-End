@@ -1,5 +1,4 @@
-function postQuestion(e){//defining the function
-    e.preventDefault();
+function postQuestion(){//defining the function
     let token = localStorage.getItem("token")//assigning the token for the looged in user a variable
     
     let title = document.getElementById('question-title').value;
