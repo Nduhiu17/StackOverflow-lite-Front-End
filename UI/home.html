@@ -16,16 +16,18 @@
                 </div>
                 <div class="search-header">
                     <form id="search-form" class="search-form">
-                        <input type="text" class="header-search" placeholder="search ....">
+                        <input type="text" class="header-search" id="search_input" placeholder="search ....">
                     </form>
                 </div>
+                <button onclick="search()">search</button>
             </div>
+
             <div class="right-sideheader">
                 <div class="login-header">
                     <a href="profile.html">Profile</a>
                 </div>
                 <div class="logout-header">
-                    <button id="logout">Logout</button>
+                    <button id="logout" onclick="logout()">Logout</button>
                 </div>
                 <div class=" add-question-header">
                     <a href="post-question.html">Ask a Question</a>
@@ -43,7 +45,7 @@
                     <div class="my-questions">
                         <a href="home.html"> <p>All Questions</p></a>
                     </div>
-                    <div class="all-questions">
+                    <div class="all-questions" id="my-q">
                         <a href="home.html"> <p>My Questons</p></a>
                     </div>
                 </div>
