@@ -179,7 +179,7 @@ h3{
 
 .question-answers{
     color: #39739d;
-    background-color: #E1ECF4;
+    /* background-color: #E1ECF4; */
     padding: 1px;
     width: fit-content;
 }
