@@ -38,3 +38,4 @@ function loadQuestions(){
         }
         xhr.send()
     }
+

@@ -8,7 +8,7 @@ let login = () => {//function to log in a user
     }
 
 
-    fetch('https://antony-stackoverflow-v2.herokuapp.com/api/v1/auth/login', {//fetching the login url
+    fetch('http://127.0.0.1:5000/api/v1/auth/login', {//fetching the login url
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -25,6 +25,8 @@ let login = () => {//function to log in a user
         
         })
         .then((data) => {
+        localStorage.setItem("token",data.access_token)
+        // window.location.replace("home.html");
             if (data.message === "Logged in") {//checking a successful login
                 window.location.replace("home.html");//redirecting to home page after a successful login
             }
