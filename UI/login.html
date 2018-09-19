@@ -34,11 +34,15 @@
                         <h2>Login</h2>
                     </div>
                     <div-reg-form-div>
-                        <input type="text" class="username" placeholder="username"  id="name">
-                        <input type="password" class="password" placeholder="password"  id="password">
-                        <div class="s-button">
-                            <button id="reg-submit-button" class="reg-submit-button"><a href="home.html">Login</a></button>
-                        </div>
+                        <form action="" id="login-form">
+                            <input type="text" class="username" placeholder="username"  id="name" required>
+                            <input type="password" class="password" placeholder="password"  id="password" required>
+                            
+                            <div class="s-button">
+                                <!-- <button id="reg-submit-button" class="reg-submit-button"><a href="home.html">Login</a></button> -->
+                                <button type="button" class="reg-submit-button" onclick="login()">LOGIN</button>
+                            </div>
+                        </form>
                     </div-reg-form-div>
                 </div>
                 <div class="signin-here">
@@ -51,5 +55,6 @@
              <p class="p-footer">&copy; 2018 StackOverflow-Lite</p>
         </div>
     </div>
+    <script src="js/auth.js"></script>
 </body>
-</html>
+<!-- </html>0q2document.getElementById('login-form').addEventListener('submit',auth.login); -->

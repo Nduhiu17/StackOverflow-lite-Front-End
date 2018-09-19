@@ -1,6 +1,6 @@
 function loadQuestions(){
     var xhr = new XMLHttpRequest();
-    xhr.open('GET','https://antony-stackoverflow-v2.herokuapp.com/api/v1/questions',true);//CONsuming get all questions endpoint
+    xhr.open('GET','http://127.0.0.1:5000/api/v1/questions',true);
 
     xhr.onload = function(){
         if(this.status == 200){
@@ -12,10 +12,10 @@ function loadQuestions(){
             allData = data[1];
         
             let output = '';
-            allData.forEach((question) => {//looping over the questions
+            allData.forEach((question) => {
                 output +=
                 `<div class="question-title">
-                    <a href="question-details.html"><h3>W${question.title}</h3></a> 
+                    <a href="question-details.html"><h3>W${question.title}</h3></a>
                 </div>
                 <div class="question-content">
                 ${question.body}
@@ -25,10 +25,10 @@ function loadQuestions(){
                         Author:${question.user.username}
                     </div>
                     <div class="question-creation-date">
-                        Created on: ${question.date_created}
+                        Created at: ${question.date_created}
                     </div>
                     <div class="question-answers">
-                        
+                        15 Answers
                     </div>
                 </div>`;
             })
@@ -36,7 +36,5 @@ function loadQuestions(){
             }
             
         }
-        xhr.send()//sending the data to html page
+        xhr.send()
     }
-   
- 
