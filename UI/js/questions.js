@@ -1,18 +1,19 @@
-function loadQuestions(){
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET','http://127.0.0.1:5000/api/v1/questions',true);
+let loadQuestions = () => {//derfining the method
+        fetch('http://127.0.0.1:5000/api/v1/questions',{
 
-    xhr.onload = function(){
-        if(this.status == 200){
-            var questions = JSON.parse(this.responseText);
-            console.log(questions);
+            method: 'GET',
+    
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8'
+            }
+        })
+        .then((res) => res.json())//getting a promise from the data
+        .then((data) => {
+            console.log(data.data);
+            allData =data.data
 
-            let data = Object.values(questions)
-            
-            allData = data[1];
-        
             let output = '';
-            allData.forEach((question) => {
+            allData.forEach((question) => {//looping over the fetched data
                 output +=
                 `<div class="question-title">
                     <a href="question-details.html"><h3>W${question.title}</h3></a>
@@ -28,14 +29,18 @@ function loadQuestions(){
                         Created at: ${question.date_created}
                     </div>
                     <div class="question-answers">
-                        15 Answers
+                        
                     </div>
                 </div>`;
-            })
-            document.getElementById('middle-body-main').innerHTML=output;
-            }
-            
-        }
-        xhr.send()
-    }
+            document.getElementById('middle-body-main').innerHTML = output;
 
+            
+            
+        })
+    
+        .then(data => {
+            console.log(data);
+        })
+        
+    })
+}
