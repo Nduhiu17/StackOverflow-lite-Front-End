@@ -18,11 +18,7 @@ let login = () => {//function to log in a user
 
         })
         .then((res) => {
-
             return res.json()
-            console.log(res);
-            
-        
         })
         .then((data) => {
         localStorage.setItem("token",data.access_token)
@@ -76,7 +72,7 @@ let register = () => {
 
             return res.json()
 
-          
+
         })
         .then((data) => {
             if (data.message === "You have been signed up successfully") {
