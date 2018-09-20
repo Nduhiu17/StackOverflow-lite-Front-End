@@ -1,6 +1,6 @@
 function postQuestion(){//defining the function
     let token = localStorage.getItem("token")//assigning the token for the looged in user a variable
-    
+
     let title = document.getElementById('question-title').value;
     let body = document.getElementById('question-body').value;
      let data = {
@@ -16,11 +16,10 @@ function postQuestion(){//defining the function
             'Authorization': `Bearer ${token}`
         },
         body:JSON.stringify(data)
-        
+
     })
     .then(res => res.json())//getting the promise
     .then(data => {
-        console.log(data);
         if (data.message === "The question posted successfully") {
             window.location.replace("home.html");//redirecting to home page after a successful question creation
         }

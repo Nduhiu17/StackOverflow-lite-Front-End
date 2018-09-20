@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <title>question-details</title>
     <link rel="stylesheet" href="css/master.css">
 </head>
+
 <body>
     <div class="header">
         <div class="container-header">
             <div class="left-sideheader">
                 <div class="logo-header">
-                    <a href="home.html"><p class="p-logo">Stack Overflow Lite</p></a>
+                    <a href="home.html">
+                        <p class="p-logo">Stack Overflow Lite</p>
+                    </a>
                 </div>
                 <div class="search-header">
                     <form id="search-form" class="search-form">
@@ -35,131 +39,88 @@
         <div class="left-body-container">
             <div class="left-container">
                 <div class="home-button">
-                    <a href="home.html"> <p>Home</p></a>
+                    <a href="home.html">
+                        <p>Home</p>
+                    </a>
                 </div>
                 <div class="left-sub-bars">
                     <div class="my-questions">
-                        <a href="home.html"> <p>All Questions</p></a>
+                        <a href="home.html">
+                            <p>All Questions</p>
+                        </a>
                     </div>
                     <div class="all-questions">
-                        <a href="home.html"> <p>My Questions</p></a>
+                        <a href="home.html">
+                            <p>My Questions</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="middle-body-container">
             <div class="middle-body-main">
-                    <h2>Question Details</h2>
+                <h2>Question Details</h2>
                 <div class="middle-main-details">
-                    <div class="questions-summary">
-                        <div class="question-title">
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio</h3>
-                        </div>
-                        <div class="question-content">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                        </div> <br>
+                    <div class="questions-summary" id="question-details">
                     </div>
+
                     <div class="q-answers">
                         <div class="answers-header">
                             Answers
                         </div>
                         <div class="answers-all">
-                    <div class="q-answers-all">
-                        <div class="question-answers-details">
-                                <div class="question-answer-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                </div>
-                                <div class="answer-voting">
-                                    <div class="question-answer-votes">
-                                            Accept
-                                    </div>
-                                    <div class="question-answer-votes">
-                                        Upvote 
-                                    </div>
-                                    <div class="question-answer-votes">
-                                            Downvote
-                                    </div>
-                                </div>
+                        <div class="q-answers-all" id="answers"></div>
+                        <div class="add-question-container">
+                            <h2>Give your answer</h2>
+                            <div class="question-body">
+                                <form action="#">
+                                    <textarea name="answer-body-post" id="answer-body-post" cols="30" rows="10"></textarea>
+                                </form>
                             </div>
-                            <div class="question-answers-details">
-                                    <div class="question-answer-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    </div>
-                                    <div class="answer-voting">
-                                        <div class="question-answer-votes">
-                                                Accept
-                                        </div>
-                                        <div class="question-answer-votes">
-                                            Upvote 
-                                        </div>
-                                        <div class="question-answer-votes">
-                                                Downvote
-                                        </div>
-                                    </div>
+                            <div class="question-details-buttons">
+                                <div id="post-question-button-div" class="post-question-button-div">
+                                    <button id="post-answer-button" class="post-answer-button">Answer</button>
                                 </div>
-                                <div class="question-answers-details">
-                                    <div class="question-answer-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    </div>
-                                    <div class="answer-voting">
-                                        <div class="question-answer-votes">
-                                                Accept 
-                                        </div>
-                                        <div class="question-answer-votes">
-                                            Upvote 
-                                        </div>
-                                        <div class="question-answer-votes">
-                                                Downvote
-                                        </div>
-                                    </div>
+                                <div id="post-question-button-div" class="post-question-button-div">
+                                    <button id="update-question-button" class="update-question-button">Modify Question</button>
                                 </div>
-                    </div>
-                </div>
-                            <div class="add-question-container">
-                                    <h2>Give your answer</h2>
-                                    <div class="question-body">
-                                        <textarea name="answer-body-post" id="answer-body-post" cols="30" rows="10"></textarea>
-                                    </div>
-                                    <div class="question-details-buttons">
-                                            <div id="post-question-button-div" class="post-question-button-div">
-                                                <button id="post-answer-button" class="post-answer-button">Answer</button>
-                                            </div>
-                                            <div id="post-question-button-div" class="post-question-button-div">
-                                                <button id="update-question-button" class="update-question-button">Modify Question</button>
-                                            </div>
-                                            <div id="post-question-button-div" class="post-question-button-div">
-                                                <button id="delete-question-button" class="delete-question-button">Delete Question</button>
-                                            </div>
-                                    </div>
-                            </div>
-                        </div>
-                </div>
-                    </div>
-                </div>
-                <div class="right-body-container">
-                    <div class="right-main-bar-contents">
-                        <div class="right-main-bar-contents-title">
-                            <h3>Tags</h3>
-                        </div>
-                        <div class="right-main-bar-contents-bodies">
-                            <div class="question-author">
-                                    Author:Antony 
-                            </div><br>
-                            <div class="question-creation-date">
-                                    Created at: 28/08/2018
-                            </div><br>
-                            <div class="question-answers">
-                                    15 Answers
+                                <div id="post-question-button-div" class="post-question-button-div">
+                                    <button id="delete-question-button" class="delete-question-button">Delete Question</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                 </div>
+                </div>
             </div>
-     
         </div>
+        <div class="right-body-container">
+            <div class="right-main-bar-contents">
+                <div class="right-main-bar-contents-title">
+                    <h3>Tags</h3>
+                </div>
+                <div class="right-main-bar-contents-bodies">
+                    <div class="question-author">
+                        Author:Antony
+                    </div><br>
+                    <div class="question-creation-date">
+                        Created at: 28/08/2018
+                    </div><br>
+                    <div class="question-answers">
+                        15 Answers
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
     </div>
     <div class="footer-home">
         <p class="p-footer-home">&copy; 2018 StackOverflow-Lite</p>
     </div>
+
+    <script src="js/question-detail.js"></script>
+    <script src="js/postAnswer.js"></script>
 </body>
+
 </html>
