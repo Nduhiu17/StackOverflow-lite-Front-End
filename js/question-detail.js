@@ -49,9 +49,9 @@ deleteBtn.addEventListener("click", () => {
     .then(res => res.json())
     .then(data => {
         if(data.message === 'Successfully deleted') {
-            window.location.replace('/home.html')
-        } else {            
-            alert('Something went wrong')
+            window.location.replace('home.html')
+        } else {
+            alert('You are not authorized to delete the question')
         }
     });
 });
