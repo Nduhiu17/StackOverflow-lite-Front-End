@@ -4,7 +4,7 @@ const answers = document.querySelector("#answers");
 const deleteBtn = document.querySelector("#delete-question-button");
 
 
-fetch(`http://127.0.0.1:5000/api/v1/questions/${id}`)
+fetch(`https://antony-stackoverflow-v2.herokuapp.com/api/v1/questions/${id}`)
   .then(res => res.json())
   .then(question => {
     el.innerHTML = `
@@ -40,7 +40,7 @@ fetch(`http://127.0.0.1:5000/api/v1/questions/${id}`)
 
 
   deleteBtn.addEventListener("click", () => {
-    fetch('http://127.0.0.1:5000/api/v1/questions/' + id, {
+    fetch('https://antony-stackoverflow-v2.herokuapp.com/api/v1/questions/' + id, {
      method: "DELETE",
      headers: {
        "Content-Type": "application/json",

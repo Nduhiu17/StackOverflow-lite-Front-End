@@ -8,7 +8,7 @@ function postQuestion(){//defining the function
          body:body
      }
 
-    fetch('http://127.0.0.1:5000/api/v1/questions',{//calling the api endpoint
+    fetch('https://antony-stackoverflow-v2.herokuapp.com/api/v1/questions',{//calling the api endpoint
         method:'POST',
         headers:{
             'Accept':'application/json',

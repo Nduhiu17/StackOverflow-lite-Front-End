@@ -1,5 +1,5 @@
 let loadQuestions = () => {//derfining the method
-        fetch('http://127.0.0.1:5000/api/v1/questions',{
+        fetch('https://antony-stackoverflow-v2.herokuapp.com/api/v1/questions',{
 
             method: 'GET',
 
