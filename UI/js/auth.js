@@ -24,7 +24,7 @@ let login = () => {//function to log in a user
         localStorage.setItem("token",data.access_token)
         // window.location.replace("home.html");
             if (data.message === "Logged in") {//checking a successful login
-                window.location.replace("/home.html");//redirecting to home page after a successful login
+                window.location.replace("home.html");//redirecting to home page after a successful login
             }
                 if(data.message){
                     window.alert(data.message)
