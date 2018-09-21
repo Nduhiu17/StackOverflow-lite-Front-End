@@ -1,6 +1,8 @@
 const id = window.location.search.slice(1);
 const el = document.querySelector("#question-details");
 const answers = document.querySelector("#answers");
+const deleteBtn = document.querySelector("#delete-question-button");
+
 
 fetch(`http://127.0.0.1:5000/api/v1/questions/${id}`)
   .then(res => res.json())
@@ -37,3 +39,28 @@ fetch(`http://127.0.0.1:5000/api/v1/questions/${id}`)
   });
 
 
+  deleteBtn.addEventListener("click", () => {
+    fetch('http://127.0.0.1:5000/api/v1/questions/' + id, {
+     method: "DELETE",
+     headers: {
+       "Content-Type": "application/json",
+       Authorization: `Bearer ${localStorage.getItem("token")}`
+     }
+   })
+     .then((res) => {
+         console.log(res)
+         return res.json()
+     })
+ 
+     .then(data => {
+         if(data.message === 'Successfully deleted') {
+         console.log(data.message)
+         window.location.replace('home.html')
+         }
+         else {
+             alert('Something went wrong')
+         }
+         }) 
+     })
+ 
+ 

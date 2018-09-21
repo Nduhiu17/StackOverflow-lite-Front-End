@@ -59,7 +59,7 @@ let register = () => {
     }
 
 
-    fetch('https://antony-stackoverflow-v2.herokuapp.com/api/v1/auth/signup', {//fetching the signup url
+    fetch('http://127.0.0.1:5000/api/v1/auth/signup', {//fetching the signup url
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -69,6 +69,8 @@ let register = () => {
 
         })
         .then((res) => {
+            if(res.status===201)
+                window.location.replace("login.html");
 
             return res.json()
 
