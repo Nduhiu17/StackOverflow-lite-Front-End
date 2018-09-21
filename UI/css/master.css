@@ -1,8 +1,8 @@
 body{
     display: block;
     margin: 0;
- 
-    
+
+
 }
 
 html {
@@ -15,6 +15,18 @@ html {
 
 div#middle-body-main {
     max-height: 70vh;
+}
+
+ 
+
+#logout {
+  
+    background-color: #39f;
+    color: #fff;
+    padding: 4px 9px 6px 12px;
+    border: 1px solid white;
+    margin-top: -1px;
+    border-radius: 15px;
 }
 
 .header{
@@ -63,14 +75,14 @@ p.p-logo {
     border-radius: 15px;
     margin-bottom: 5%;
 }
- 
- 
+
+
  .container-header{
      display: flex;
      width: 100%;
      flex-direction: row;
      justify-content: space-between;
-  
+
  }
 
  .search-form{
@@ -80,6 +92,7 @@ p.p-logo {
 input[type=text], select, textarea {
     width: 100%;
     padding: 7px;
+    margin: 2px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -206,7 +219,7 @@ h3{
 	.container-header{
         display: flex;
         flex-direction: column;
-       
+
     }
 }
 
@@ -274,7 +287,7 @@ middle-body-main {
     display: flex;
     width: 100% !important;
 
-    } 
+    }
 }
 
 
@@ -378,12 +391,13 @@ a:hover {
 .reg-main-body-container{
     display: flex;
     flex-direction: row;
-    
+
 }
 
 input[type="password"] {
     width: 100%;
     padding: 7px;
+    margin: 2px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -398,7 +412,7 @@ input[type="password"] {
 }
 
 .footer-reg{
-    background-color: #39f; 
+    background-color: #39f;
     text-align: center;
     padding: 0px;
     color: #fff;
@@ -467,7 +481,7 @@ img {
 
 .user-details-profile {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     width: 50%;
 }
 
@@ -648,7 +662,7 @@ img{
 a {
     all: unset;
 }
-  
+
 a:hover {
     cursor: pointer;
 }
@@ -720,7 +734,7 @@ a:hover {
 
 .logo-header {
     margin-left: 35px;
-    
+
 }
 
 .r-button{
@@ -737,7 +751,7 @@ a:hover {
 }
 
 .form-signin-r{
-    padding: 6px 20px 1px 2px;
+    padding: 6px 20px 1px 18px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 55px;
     background-color: #e1ecf4;

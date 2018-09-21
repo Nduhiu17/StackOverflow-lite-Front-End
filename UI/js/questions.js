@@ -32,14 +32,6 @@ let loadQuestions = () => {//derfining the method
                     </div>
                 </div>`;
             document.getElementById('middle-body-main').innerHTML = output;
-
-
-
         })
-
-        .then(data => {
-            console.log(data);
-        })
-
     })
 }
