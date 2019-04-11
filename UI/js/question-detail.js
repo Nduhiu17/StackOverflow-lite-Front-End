@@ -4,7 +4,7 @@ const answers = document.querySelector("#answers");
 const deleteBtn = document.querySelector("#delete-question-button");
 
 
-fetch(`http://127.0.0.1:5000/api/v1/questions/${id}`)
+fetch(`https://antony-stackoverflow-v2.herokuapp.com/api/v1/questions/${id}`)
   .then(res => res.json())
   .then(question => {
     el.innerHTML = `
@@ -40,23 +40,23 @@ fetch(`http://127.0.0.1:5000/api/v1/questions/${id}`)
 
 
   deleteBtn.addEventListener("click", () => {
-    fetch('http://127.0.0.1:5000/api/v1/questions/' + id, {
+    fetch('https://antony-stackoverflow-v2.herokuapp.com/api/v1/questions/' + id, {
      method: "DELETE",
      headers: {
        "Content-Type": "application/json",
        Authorization: `Bearer ${localStorage.getItem("token")}`
      }
    })
-     .then((res) => {
-         console.log(res)
-         return res.json()
-     })
+
+    .then((res) => {
+        if(res.status===204)
+            window.location.replace("home.html");
+        })
  
      .then(data => {
-         if(data.message === 'Successfully deleted') {
-         console.log(data.message)
-         window.location.replace('home.html')
-         }
+        if(data.message){
+            window.alert(data.message)//alerting the error messages
+        }
          else {
              alert('Something went wrong')
          }
