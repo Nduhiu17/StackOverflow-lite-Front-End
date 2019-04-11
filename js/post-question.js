@@ -1,3 +1,7 @@
+if(localStorage.getItem("token") == null) {
+    window.location.replace("index.html");
+}
+
 function postQuestion(){//defining the function
     let token = localStorage.getItem("token")//assigning the token for the looged in user a variable
 

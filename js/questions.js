@@ -1,3 +1,7 @@
+if(localStorage.getItem("token") == null) {
+    window.location.replace("index.html");
+}
+
 let loadQuestions = () => {//derfining the method
         fetch('https://antony-stackoverflow-v2.herokuapp.com/api/v1/questions',{
 

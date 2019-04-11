@@ -1,3 +1,8 @@
+if(localStorage.getItem("token") == null) {
+  window.location.replace("index.html");
+}
+
+
 const answer = document.querySelector("#answer-body-post");
 const answerBtn = document.querySelector("#post-answer-button");
 

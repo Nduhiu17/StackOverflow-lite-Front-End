@@ -1,3 +1,8 @@
+if(localStorage.getItem("token") == null) {
+    window.location.replace("index.html");
+}
+
+
 const id = window.location.search.slice(1);
 const el = document.querySelector("#question-details");
 const answers = document.querySelector("#answers");

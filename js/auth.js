@@ -31,14 +31,13 @@ let login = () => {//function to log in a user
                 }
             })
         .catch(error => {
-            console.log(error);
+            window.alert(error);
         })
 }
 
 function logout() {//function to logout
     localStorage.clear()
-    console.log(localStorage.data)
-    window.location.replace("login.html");
+    window.location.replace("index.html");
 }
 
 
@@ -70,7 +69,7 @@ let register = () => {
         })
         .then((res) => {
             if(res.status===201)
-                window.location.replace("login.html");
+                window.location.replace("index.html");
 
             return res.json()
 
@@ -78,7 +77,7 @@ let register = () => {
         })
         .then((data) => {
             if (data.message === "You have been signed up successfully") {
-                window.location.replace("login.html");//redirecting to login page after a successful account creation
+                window.location.replace("index.html");//redirecting to login page after a successful account creation
             }
                 if(data.message){
                     window.alert(data.message)//alerting the error messages

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registration</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/master.css">
+    
+</head>
+
 </head>
 <body>
     <div class="header">
@@ -25,36 +28,33 @@
         <div class="reg-left-main-body">
 
         </div>
-        
-        <div class="reg-main-body">
-            <div class="form-signin-r">
-                <div class="reg-title">
-                    <h2 class="h2-register">Register</h2>
+            <div class="reg-main-body2">
+                <div class="form-login-r">
+                    <div class="reg-title">
+                        <h2>LOGIN</h2>
+                    </div>
+                    <div-reg-form-div>
+                        <form action="" id="login-form">
+                            <input type="text" class="username" placeholder="username"  id="name" required>
+                            <input type="password" class="password" placeholder="password"  id="password" required>
+                            
+                            <div class="s-button">
+                                <!-- <button id="reg-submit-button" class="reg-submit-button"><a href="home.html">Login</a></button> -->
+                                <button type="button" class="reg-submit-button" onclick="login()">Login</button>
+                            </div>
+                        </form>
+                    </div-reg-form-div>
                 </div>
-                <div-reg-form-div>
-                    <form id="register-form">
-                        <input type="text" class="username" placeholder="username"  id="register-username" required>
-                        <input type="text" class="email" placeholder="email"  id="register-email" required>
-                        <input type="password" class="password" placeholder="password"  id="register-password" required>
-                        <input type="password" class="repeat-password" placeholder="repeat password"  id="register2-password" required>
-                        <div class="r-button">
-                            <!-- <button id="reg-submit-button" class="reg-submit-button">Register</button> -->
-                            <button type="button" class="reg-submit-button" onclick="register()">Register</button>
-                        </div>
-                    </form>
-                   
-                </div-reg-form-div>
+                <div class="signin-here">
+                    <i>Don't have an account yet ? Please click <a href="register.html">here...</a></i>
+                </div>
             </div>
-            <div class="login-here">
-               <i> Already have an account? <a href="login.html">login here...</a> </i>
-            </div>
-        </div>
         <div class="reg-right-main-body">
         </div>
         <div class="footer-home">
              <p class="p-footer">&copy; 2018 StackOverflow-Lite</p>
         </div>
     </div>
-    <script src="js/auth.js"></script> 
+    <script src="js/auth.js"></script>
 </body>
-</html>
+<!-- </html>0q2document.getElementById('login-form').addEventListener('submit',auth.login); -->
