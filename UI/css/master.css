@@ -32,6 +32,9 @@ div#middle-body-main {
 .header{
     display: flex;
     background-color: #39f;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 .left-sideheader{
@@ -106,6 +109,7 @@ input[type=text], select, textarea {
     display: flex;
     background: #fff;
     flex-direction: row;
+    padding: 66px;
     margin-bottom: 57px;
 }
 
@@ -113,7 +117,8 @@ input[type=text], select, textarea {
     width: 60%;
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    height: 100vh;
 
 }
 
