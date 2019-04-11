@@ -1,27 +1,3 @@
-<<<<<<< HEAD
-### StackOverflow - Lite - Front - End 
-
-
-#### Description
-StackOverflow-lite is a platform where users can ask questions and post answers to questions.
-
-#### Development
-The front has been developed using vanilla javascript
-
-
-#### Features
-- Users can create an account
-- Users can login into the account
-- Users can post a question
-- Users can get all questions
-- Users can get a single question with its answers
-- Users can post answers to questions
-- Users can delete a question
-- Users Search for questions
-- Users can modify an answer
-- Users can get the questions that they have ever posted
-- The Author of a question can accept an answer 
-=======
 ### StackOverflow - Lite
 
 #### Description
@@ -63,4 +39,3 @@ The following are the templates screenshots:
 
 ### 6. User profile page
 ![profile](https://user-images.githubusercontent.com/30591881/44837945-a2dd5280-ac43-11e8-893d-8c79cda9434a.png)
->>>>>>> 928600f16c9d4583ee10c2b15bdd85ae54ff3216

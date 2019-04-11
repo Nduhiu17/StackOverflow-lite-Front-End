@@ -9,7 +9,7 @@ answer.addEventListener("keyup", e => {
 
 answerBtn.addEventListener("click", e => {
   e.preventDefault();
-  fetch(`http://127.0.0.1:5000/api/v1/questions/${id}/answers`, {
+  fetch(`https://antony-stackoverflow-v2.herokuapp.com/api/v1/questions/${id}/answers`, {
     method: 'POST',
     body: JSON.stringify({body:answer.value}),
     headers: {
