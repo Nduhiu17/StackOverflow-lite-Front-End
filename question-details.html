@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>question-details</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-header">
+            <div class="left-sideheader">
+                <div class="logo-header">
+                    <a href="home.html">
+                        <p class="p-logo">Stack Overflow Lite</p>
+                    </a>
+                </div>
+                <div class="search-header">
+                    <form id="search-form" class="search-form">
+                        <input type="text" class="header-search" placeholder="search...">
+                    </form>
+                </div>
+            </div>
+            <div class="right-sideheader">
+                <div class="login-header">
+                </div>
+                <div class="logout-header">
+                </div>
+                <div class=" add-question-header">
+                    <a href="post-question.html">Ask a Question</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="left-body-container">
+            <div class="left-container">
+                <div class="home-button">
+                    <a href="home.html">
+                        <p>Home</p>
+                    </a>
+                </div>
+                <div class="left-sub-bars">
+                    <div class="my-questions">
+                        <a href="home.html">
+                            <p>All Questions</p>
+                        </a>
+                    </div>
+                    <div class="all-questions">
+                        <a href="home.html">
+                            <p>My Questions</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-body-container">
+            <div class="middle-body-main">
+                <h2>Question Details</h2>
+                <div class="middle-main-details">
+                    <div class="questions-summary" id="question-details">
+                    </div>
+
+                    <div class="q-answers">
+                        <div class="answers-header">
+                            Answers
+                        </div>
+                        <div class="answers-all">
+                        <div class="q-answers-all" id="answers"></div>
+                        <div class="add-question-container">
+                            <h2>Give your answer</h2>
+                            <div class="question-body">
+                                <form action="#">
+                                    <textarea name="answer-body-post" id="answer-body-post" cols="30" rows="10"></textarea>
+                                </form>
+                            </div>
+                            <div class="question-details-buttons">
+                                <div id="post-question-button-div" class="post-question-button-div">
+                                    <button id="post-answer-button" class="post-answer-button">Answer</button>
+                                </div>
+                                <div id="post-question-button-div" class="post-question-button-div">
+                                    <button id="update-question-button" class="update-question-button">Modify Question</button>
+                                </div>
+                                <div id="post-question-button-div" class="post-question-button-div">
+                                    <button id="delete-question-button" class="delete-question-button">Delete Question</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-body-container">
+            <div class="right-main-bar-contents">
+                <div class="right-main-bar-contents-title">
+                    <h3>Tags</h3>
+                </div>
+                <div class="right-main-bar-contents-bodies">
+                    <div class="question-author">
+                        Author:Antony
+                    </div><br>
+                    <div class="question-creation-date">
+                        Created at: 28/08/2018
+                    </div><br>
+                    <div class="question-answers">
+                        15 Answers
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="footer-home">
+        <p class="p-footer-home">&copy; 2018 StackOverflow-Lite</p>
+    </div>
+
+    <script src="js/question-detail.js"></script>
+    <script src="js/postAnswer.js"></script>
+</body>
+
+</html>
